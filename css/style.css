@@ -43,9 +43,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 5em;
   color: #fff;
-  margin:0;
 }
 
 h1.stupid {
@@ -92,11 +90,49 @@ img.emoji {
   text-align:center;
 }
 
-.wrap{
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-  position: relative;
+/* menu */
+#menu li.active{
+  opacity: 1;
+  background: #1793d1;
+}
+
+#menu li a{
+  text-decoration:none;
+}
+
+#menu li:hover{
+  opacity: 1;
+  background: rgba(0,0,0,0.3);
+  height: 2em;
+}
+
+#menu li a,
+#menu li.active a{
+  opacity: 1;
+  padding: 0 18px;
+  height: 2em;
+  margin: 0;
+  display: block;
+}
+
+#menu li {
+  display: inline-block;
+  line-height: 1.7em;
+}
+
+#menu{
+  background: rgba(0,0,0,0.3);
+  font-size: 2em;
+  position: fixed;
+  bottom:0;
+  height: 2em;
+  width: 400px;
+  text-align: center;
+  z-index: 70;
+  padding: 0;
+  margin: 0;
+  left:calc(50% - 400px/2);
+  border-radius: 15px 15px 0 0;
 }
 
 /*
@@ -126,34 +162,86 @@ div::-moz-selection, input::-moz-selection {
     >> media
 ------------------------*/
 
-@media only screen and (max-width: 980px){
+/* width */
+@media only screen and (max-width: 980px) {
   table {
-    font-size: 2em;
-    margin: 2em auto;
+    font-size: 2em !important;
+    margin: 2em auto !important;
   }
 }
 
-@media only screen and (max-width: 761px){
+@media only screen and (max-width: 761px) {
   h1 {
-    margin: 2em 0 0 0;
+    margin: 2em 0 0 0 !important;
   }
 
-  img {
-    width: 100%;
-    height: auto;
+  img#logo {
+    width: 100% !important;
+    height: auto !important;
   }
 
   table {
-    font-size: 1.5em;
-    margin: 1.5em auto;
+    font-size: 1.5em !important;
+    margin: 1.5em auto !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em !important;
+    margin: 1em 0 0 0 !important;
   }
 }
 
-@media only screen and (min-width: 762px), print {
+@media only screen and (max-width: 499px) {
+  table {
+    font-size: 1.0em !important;
+    margin: 1em auto !important;
+  }
+
+  #menu li a,
+  #menu li.active a {
+    padding: 0 14px;
+  }
+
+  #menu {
+    width: 300px;
+    left:calc(50% - 300px/2);
+  }
+}
+
+@media only screen and (max-width: 338px) {
+  table {
+    font-size: 0.8em !important;
+  }
+
+  #menu {
+    font-size: 1.5em;
+    height: 2em;
+    width: 230px;
+    left:calc(50% - 230px/2);
+  }
+}
+
+@media only screen and (max-width: 235px) {
+  h1 {
+    font-size: 1.0em !important;
+  }
+  table {
+    font-size: 0.5em !important;
+  }
+
+  #menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 762px) {
+  h1 {
+    font-size: 5em;
+  }
+
   img {
     width: 762px;
     height: auto;
   }
 }
-
-

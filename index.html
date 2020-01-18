@@ -83,6 +83,12 @@
 
   <body>
 
+<ul id="menu">
+  <li data-menuanchor="anchor1" class="active"><a href="#anchor1">&#x1f30f;</a></li>
+  <li data-menuanchor="anchor2" class=""><a href="#anchor2">&#x1f419;</a></li>
+  <li data-menuanchor="anchor3" class=""><a href="#anchor3">&#x2764;</a></li>
+</ul>
+
     <!-- start main content -->
     <div id="fullpage">
 
@@ -90,7 +96,7 @@
       <div class="section fp-auto-height-responsive" id="section0">
         <div class="intro">
           <h1>HELLO WORLD</h1>
-          <img src="img/logo.png"></img>
+          <img id="logo" src="img/logo.png"></img>
         </div>
       </div>
       <!-- end section -->
@@ -132,11 +138,12 @@
     <script type="text/javascript">
       var myFullpage = new fullpage('#fullpage', {
         anchors: ['firstPage', 'secondPage', '3rdPage'],
+        anchors: ['anchor1', 'anchor2', 'anchor3'],
         sectionsColor: ['#1793d1', '#232323', '#ff3564'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Hello! Im 0ctpus!', 'ABOUT ME', 'KISS'],
-        responsiveWidth: 500,
+        navigationTooltips: ['hello!', 'about me', 'kiss'],
+        menu: '#menu',
         afterResponsive: function(isResponsive){
         }
       });
