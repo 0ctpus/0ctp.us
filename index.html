@@ -61,10 +61,11 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 
     <!--[if IE]>
@@ -134,19 +135,21 @@
     </div>
     <!-- end main content -->
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script type="text/javascript">
-      var myFullpage = new fullpage('#fullpage', {
+    $(document).ready(function(){
+      $("#fullpage").fullpage({
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         anchors: ['anchor1', 'anchor2', 'anchor3'],
         sectionsColor: ['#1793d1', '#232323', '#ff3564'],
+        menu: '#menu',
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['hello!', 'about me', 'kiss'],
-        menu: '#menu',
         afterResponsive: function(isResponsive){
         }
       });
+    });
       twemoji.parse(document.body);
     </script>
 
