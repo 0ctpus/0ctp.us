@@ -1,0 +1,159 @@
+@charset "utf-8"; 
+/* CSS Document */
+
+/*
+        * author    : 0ctpus
+        * ver       : 1.0.0
+*/
+
+/*
+    >> font
+------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
+}
+
+body{
+  color: #333;
+  color: rgba(0,0,0,0.5);
+}
+
+a {
+    color: #0cf;
+    text-decoration: none;
+    border: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 5em;
+  color: #fff;
+  margin:0;
+}
+
+h1.stupid {
+  color: #ff3564;
+}
+
+p{
+  font-size: 2em;
+}
+
+.intro p{
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3em;
+  padding: 1em;
+  text-align: left;
+}
+
+table {
+  font-size: 3em;
+  color: #fff;
+  margin: 3em auto;
+  text-align: left;
+}
+
+td, th {
+  padding: 10px;
+  margin: 0;
+}
+
+table, th, td {
+  border: none;
+}
+
+img.emoji {
+  height:1em;
+  width:1em;
+  margin:0 .05em 0 .1em;
+  vertical-align:-0.1em;
+}
+
+.section{
+  text-align:center;
+}
+
+.wrap{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+
+/*
+    >> selection
+------------------------*/
+
+h1::selection, h2::selection, h3::selection,
+h4::selection, h5::selection, h6::selection,
+p::selection, dt::selection, dd::selection,
+a::selection, span::selection, address::selection,
+img::selection, td::selection, th::selection,
+div::selection, input::selection {
+    background: #00ea7d;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection,
+h4::-moz-selection, h5::-moz-selection, h6::-moz-selection,
+p::-moz-selection, dt::-moz-selection, dd::-moz-selection,
+a::-moz-selection, span::-moz-selection, address::-moz-selection,
+img::-moz-selection, td::-moz-selection, th::-moz-selection,
+div::-moz-selection, input::-moz-selection {
+    background: #00ea7d;
+}
+
+
+/*
+    >> media
+------------------------*/
+
+@media only screen and (max-width: 980px){
+  table {
+    font-size: 2em;
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (max-width: 761px){
+  h1 {
+    margin: 2em 0 0 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  table {
+    font-size: 1.5em;
+    margin: 1.5em auto;
+  }
+}
+
+@media only screen and (min-width: 762px), print {
+  img {
+    width: 762px;
+    height: auto;
+  }
+}
+
+

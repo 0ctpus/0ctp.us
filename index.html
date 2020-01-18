@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<!--
+                            ..
+               __________ .:::::. __________
+              l          ]:::::::l          |
+               '|       |:::::::::'       ./
+                |       |:::::::'       ./'
+                |       |::;::'       .:.
+              .:|       |:::'        .::::.
+            .:::|       |:'        .:::::::::.
+            ':::|       '       __::::::::::''
+              ''|              /__/::::::::'__
+                |            .['''/['''v''v'  \.
+                |         .:::/  /:/  /\  /\   /
+                |       .::::/  /:/  / / / /' /
+                |     ./''::'__] /__]/___]/___]
+                '----'     '::::'
+                             ''
+                __           _
+                \ \     __ _(_)_ __
+                 > >    \ V / | '  \
+                /_/      \_/|_|_|_|_|     ___
+                                         |___|
+
+        * author    : 0ctpus
+        * ver       : 1.0.0
+
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<!--
+  * >   head
+-->
+
+  <head>
+
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="0ctpus">
+    <meta name="description" content="">
+    <meta name="keywords" content="0ctpus,portfolio">
+    <meta name="Resource-type" content="Document">
+    <meta property="og:title" content="0ctp.us">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://0ctp.us/">
+    <meta property="og:site_name" content="0ctp.us">
+
+    <!-- title -->
+    <title>0ctpus</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="https://0ctp.us/img/logo.png">
+    <link rel="apple-touch-icon" href="https://0ctp.us/img/logo.png">
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- javascript -->
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+    <!--[if IE]>
+      <script type="text/javascript">
+         var console = { log: function() {} };
+      </script>
+    <![endif]-->
+
+  </head>
+
+
+
+<!--
+  * >   body
+-->
+
+  <body>
+
+    <!-- start main content -->
+    <div id="fullpage">
+
+      <!-- start section -->
+      <div class="section fp-auto-height-responsive" id="section0">
+        <div class="intro">
+          <h1>HELLO WORLD</h1>
+          <img src="img/logo.png"></img>
+        </div>
+      </div>
+      <!-- end section -->
+
+      <!-- start section -->
+      <div class="section" id="section1">
+        <div class="intro">
+          <h1>ABOUT ME</h1>
+          <table>
+            <tr>
+              <th>NAME</th>
+              <td>0ctpus&#x1f419;</td>
+            </tr>
+            <tr>
+              <th>FAV</th>
+              <td>&#x1f4bb;, &#x1f3ae;, &#x1f427; , VIM</td>
+            </tr>
+            <tr>
+              <td colspan="2"><a href="https://twitter.com/0ctpus_" target="blank">TWITTER</a>, <a href="https://github.com/0ctpus" target="blank">GITHUB</a>, <a href="https://0ctpus.hateblo.jp/" target="blank">BLOG</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- end section -->
+
+      <!-- start section -->
+      <div class="section" id="section2">
+        <div class="intro">
+          <h1>Keep it simple!</h1>
+          <h1 class="stupid">STUPID!</h1>
+        </div>
+      </div>
+      <!-- end section -->
+
+    </div>
+    <!-- end main content -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#1793d1', '#232323', '#ff3564'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Hello! Im 0ctpus!', 'ABOUT ME', 'KISS'],
+        responsiveWidth: 500,
+        afterResponsive: function(isResponsive){
+        }
+      });
+      twemoji.parse(document.body);
+    </script>
+
+  </body>
+
+</html>
