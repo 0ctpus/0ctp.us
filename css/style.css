@@ -163,7 +163,22 @@ div::-moz-selection, input::-moz-selection {
 ------------------------*/
 
 /* width */
+@media only screen and (min-width: 762px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  img {
+    width: 762px;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 980px) {
+  h1 {
+    font-size: 4em !important;
+  }
+
   table {
     font-size: 2em !important;
     margin: 2em auto !important;
@@ -172,7 +187,7 @@ div::-moz-selection, input::-moz-selection {
 
 @media only screen and (max-width: 761px) {
   h1 {
-    margin: 2em 0 0 0 !important;
+    font-size: 3em !important;
   }
 
   img#logo {
@@ -187,7 +202,7 @@ div::-moz-selection, input::-moz-selection {
 }
 @media only screen and (max-width: 500px) {
   h1 {
-    font-size: 1.5em !important;
+    font-size: 2em !important;
     margin: 1em 0 0 0 !important;
   }
 }
@@ -232,16 +247,5 @@ div::-moz-selection, input::-moz-selection {
 
   #menu {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 762px) {
-  h1 {
-    font-size: 5em;
-  }
-
-  img {
-    width: 762px;
-    height: auto;
   }
 }
