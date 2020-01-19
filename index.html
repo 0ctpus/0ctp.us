@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <!--
                             ..
@@ -24,7 +24,7 @@
                                          |___|
 
         * author    : 0ctpus
-        * ver       : 1.0.0
+        * ver       : 1.1.1
 
 -->
 
@@ -59,8 +59,8 @@
     <link rel="apple-touch-icon" href="https://0ctp.us/img/logo.png">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -84,11 +84,11 @@
 
   <body>
 
-<ul id="menu">
-  <li data-menuanchor="anchor1" class="active"><a href="#anchor1">&#x1f30f;</a></li>
-  <li data-menuanchor="anchor2" class=""><a href="#anchor2">&#x1f419;</a></li>
-  <li data-menuanchor="anchor3" class=""><a href="#anchor3">&#x2764;</a></li>
-</ul>
+    <ul id="menu">
+      <li data-menuanchor="anchor1" class="active"><a href="#anchor1">&#x1f30f;</a></li>
+      <li data-menuanchor="anchor2" class=""><a href="#anchor2">&#x1f419;</a></li>
+      <li data-menuanchor="anchor3" class=""><a href="#anchor3">&#x2764;</a></li>
+    </ul>
 
     <!-- start main content -->
     <div id="fullpage">
@@ -145,14 +145,10 @@
         menu: '#menu',
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['hello!', 'about me', 'kiss'],
-        afterResponsive: function(isResponsive){
-        }
+        navigationTooltips: ['hello!', 'about me', 'kiss']
       });
     });
       twemoji.parse(document.body);
     </script>
-
   </body>
-
 </html>
