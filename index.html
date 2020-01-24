@@ -24,7 +24,7 @@
                                          |___|
 
         * author    : 0ctpus
-        * ver       : 1.1.1
+        * ver       : 1.1.4
 
 -->
 
@@ -62,7 +62,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+    @charset "utf-8";a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video{font-family:Press Start\ 2P,cursive;font-weight:100}body{color:#333;color:rgba(0,0,0,.5);background:#1793d1}a{color:#0cf;text-decoration:none;border:0}a:hover{opacity:.7}h1{color:#fff}h1.stupid{color:#ff3564}p{font-size:2em}.intro p{width:50%;margin:0 auto;padding:1em}.intro p,table{color:#fff;font-size:3em;text-align:left}table{margin:3em auto}td,th{padding:10px;margin:0}table,td,th{border:0}img.emoji{height:1em;width:1em;margin:0 .05em 0 .1em;vertical-align:-.1em}.section{text-align:center}#menu li.active{opacity:1;background:#1793d1}#menu li a{text-decoration:none}#menu li:hover{opacity:1;background:rgba(0,0,0,.3);height:2em}#menu li a,#menu li.active a{opacity:1;padding:0 18px;height:2em;margin:0;display:block}#menu li{display:inline-block;line-height:1.7em}#menu{background:#444;font-size:2em;position:fixed;bottom:0;height:2em;width:25pc;text-align:center;z-index:1;padding:0;margin:0;left:calc(50% - 25pc/2);border-radius:15px 15px 0 0}a::selection,address::selection,dd::selection,div::selection,dt::selection,h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,img::selection,input::selection,p::selection,span::selection,td::selection,th::selection{background:#00ea7d}a::-moz-selection,address::-moz-selection,dd::-moz-selection,div::-moz-selection,dt::-moz-selection,h1::-moz-selection,h2::-moz-selection,h3::-moz-selection,h4::-moz-selection,h5::-moz-selection,h6::-moz-selection,img::-moz-selection,input::-moz-selection,p::-moz-selection,span::-moz-selection,td::-moz-selection,th::-moz-selection{background:#00ea7d}@media only screen and (min-width:762px){h1{font-size:5em}img{width:762px;height:auto}}@media only screen and (max-width:980px){h1{font-size:4em!important}table{font-size:2em!important;margin:2em auto!important}}@media only screen and (max-width:761px){h1{font-size:3em!important}img#logo{width:100%!important;height:auto!important}table{font-size:1.5em!important;margin:1.5em auto!important}}@media only screen and (max-width:500px){h1{font-size:2em!important;margin:1em 0 0!important}}@media only screen and (max-width:499px){table{font-size:1!important;margin:1em auto!important}#menu li a,#menu li.active a{padding:0 14px}#menu{width:300px;left:calc(50% - 300px/2)}}@media only screen and (max-width:338px){table{font-size:.8em!important}#menu{font-size:1.5em;height:2em;width:230px;left:calc(50% - 230px/2)}}@media only screen and (max-width:235px){h1{font-size:1!important}table{font-size:.5em!important}#menu{display:none}}
+    </style>
 
     <!-- javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -137,18 +139,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-      $("#fullpage").fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
-        anchors: ['anchor1', 'anchor2', 'anchor3'],
-        sectionsColor: ['#1793d1', '#232323', '#ff3564'],
-        menu: '#menu',
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['hello!', 'about me', 'kiss']
-      });
-    });
-      twemoji.parse(document.body);
+    $(document).ready(function(){$("#fullpage").fullpage({anchors:["firstPage","secondPage","3rdPage"],anchors:["anchor1","anchor2","anchor3"],sectionsColor:["#1793d1","#232323","#ff3564"],menu:"#menu",navigation:!0,navigationPosition:"right",navigationTooltips:["hello!","about me","kiss"]})}),twemoji.parse(document.body);
     </script>
   </body>
 </html>
