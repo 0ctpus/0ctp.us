@@ -30,6 +30,7 @@ time, mark, audio, video, input, textarea {
 body{
   color: #333;
   color: rgba(0,0,0,0.5);
+  background: #1793d1;
 }
 
 a {
